@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <form>
+                <i class="fa-solid fa-paper-plane sc-s"></i>
+                <div class="input-group">
+                    <label for="Full Name">Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                    <span id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="">phone No</label>
+                    <input type="tel" placeholder="010 270 6289" id="contact-phone" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="">Email Id</label>
+                    <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Your message</label>
+                    <textarea placeholder="Enter your message" rows="5" id="contact-message" onkeyup="validatemessage()"></textarea>
+                    <span id="message-error"></span>
+                </div>
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
